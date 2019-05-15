@@ -12,7 +12,7 @@ $(document).ready(function() {
             };
 
             // Send to sever a Json object
-            url_server = 'http://3c459b8e.ngrok.io/infore/api/question_answering'
+            url_server = 'http://75dad6c2.ngrok.io/infore/api/question_answering'
             
             $.ajax({
                 type: 'POST',
@@ -21,7 +21,7 @@ $(document).ready(function() {
                 success: function (data) {
                   var names = data
                   console.log(data.answers[0].result)
-                  $("#response pre").html(data.answers[0].result)
+                  document.getElementById("answerq").innerHTML = data.answers[0].result
                 },
                 contentType: "application/json",
                 dataType: 'json'

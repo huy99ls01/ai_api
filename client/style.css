@@ -129,3 +129,12 @@ input[type=checkbox]:checked + label {
   color: #f00;
   font-style: normal;
 }
+
+button { 
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}

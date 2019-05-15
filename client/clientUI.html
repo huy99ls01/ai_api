@@ -7,7 +7,7 @@
   
   
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css'>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 	
 </head>
@@ -24,36 +24,46 @@
 	<div class="row input-container">
 			<div class="col-xs-12">
 				<div class="styled-input wide">
-                    <textarea required></textarea>
+                    <textarea required id="DocInput"></textarea>
 					<label>Content</label> 
 				</div>
 			</div>
 			<div class="col-xs-12">
 				<div class="styled-input wide">
-					<input type="text" required />
+					<input type="text" id="QuesInput" required />
 					<label>Your Question?</label> 
 				</div>
 			</div>
-			<div class="col-xs-12">
+			<div class="col-xs-8">
 				<div class="styled-input wide">
                     <!--<textarea required></textarea>-->
-                    <input type="text" required />
-					<label>Our Answer</label>
+										<input type="text"  required />
+										
+					<label>Our Answer: <p id="answerq"></p></label>
 				</div>
 			</div>
+
+			<div class="col-xs-4">
+					<div class="styled-input wide">
+											<!--<textarea required></textarea>-->
+											<input type="text"  required />
+											
+						<label>Our Answer: <p id="answerq"></p></label>
+					</div>
+				</div>
 			<div class="col-xs-12">
-				<div class="btn-lrg submit-btn">Send</div>
+				<div class="btn-lrg submit-btn">
+					<button id = "btn">Submit</button>
+				</div>
 			</div>
 	</div>
 </div>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-
-  
-
-  <script  src="js/index.js"></script>
-
-
-
+	<script  src="clientside.js"></script>
+	
+	<footer class="col-xs-12">
+		<p>&copy; BangDo, DatLuu, QuangHuy</p>
+	</footer>
 
 </body>
 
