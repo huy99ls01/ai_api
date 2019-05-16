@@ -22,6 +22,7 @@ $(document).ready(function() {
                   var names = data
                   console.log(data.answers[0].result)
                   document.getElementById("answerq").innerHTML = data.answers[0].result
+                  document.getElementById("oanswerq").innerHTML = data.answers[1].result
                 },
                 contentType: "application/json",
                 dataType: 'json'
